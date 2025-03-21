@@ -34,6 +34,7 @@ REDIS_CONFIG = {
 }
 
 @app.get("/api/v1/ping")
+@app.head("/api/v1/ping")
 async def ping():
     try:
         # Connect to MySQL
